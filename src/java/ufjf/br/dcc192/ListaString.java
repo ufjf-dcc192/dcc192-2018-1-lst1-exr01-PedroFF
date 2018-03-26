@@ -59,6 +59,8 @@ public class ListaString extends HttpServlet {
                 Collections.shuffle(frutas);
 
                 break;
+            default:
+                response.sendRedirect("lista.html");
         }
         for (String fruta : frutas) {
             out.println("<li><h4>" + fruta + "</h4></li>");
